@@ -87,8 +87,6 @@ def decodeBinary(aCharCodes):
 
 
 def decompressLZW(aCodes):
-    print "derp"
-    print "aCodes", aCodes
     sData = ''
     oDictionary = [chr(x) for x in range(ord("\x00"), ord("\xff")+1)]
     if type(aCodes) == type([]):
